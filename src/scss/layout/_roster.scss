@@ -1,0 +1,99 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.roster {
+    background-color: v.$grisclaro;
+    padding: 5rem 0;
+
+    h3, p {
+        text-align: center;
+        
+    }
+    .csgo {
+        margin-bottom: 5rem;
+        font-size: 3rem;
+    }
+    .h3 {
+        font-size: 5rem;
+    }
+}
+
+.jugadores-contenedor {
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    p {
+        color: v.$z9;
+        margin: 0;
+    }
+}
+
+.jugador {
+    padding-top: 2rem;
+
+    p {
+
+
+        &:after {
+            content: '';
+            display: block;
+            width: 30rem;
+            height: 20rem;
+            background-size: 20rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
+        }
+    }
+}
+.max .nombre-jugador:after {
+    display: inline-block;
+    background-image: url(../img/jugadores/max.png);
+}
+.dgt .nombre-jugador:after {
+    display: inline-block;
+    background-image: url(../img/jugadores/dgt.png);
+}
+.rox .nombre-jugador:after {
+    display: inline-block;
+    background-image: url(../img/jugadores/rox.png);
+}
+.david .nombre-jugador:after {
+    display: inline-block;
+    background-image: url(../img/jugadores/david.png);
+}
+.nqz .nombre-jugador:after {
+    display: inline-block;
+    background-image: url(../img/jugadores/nqz.png);
+}
+
+.bg-gris {
+    background-color: v.$grisoscuro;
+}
+
+.informacion {
+    text-align: center;
+    color: v.$blanco;
+    
+    @include m.resetear-lista;
+    li {
+
+        background-color: v.$morado;
+        height: 30px;
+        }
+}
+
+
+
+.flag {
+    display: inline;
+    align-content: center;
+    height: 15px;
+    width: 20px;
+}
+

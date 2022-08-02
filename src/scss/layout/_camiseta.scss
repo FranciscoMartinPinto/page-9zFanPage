@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.abajo {
+    padding-right: 50px;
+    display: grid;
+    place-items: center;
+
+    h3 {
+        margin: 0 auto;
+    }
+    h3, p {
+        color: white;
+    }
+}
+.camiseta {
+   img {
+    width: auto;
+    height: auto;
+    border-style: solid;
+    color:rgb(100, 6, 119);
+    border-width: 10px;
+    border-radius: 30px;
+   }
+   @include m.tablet {
+    width: 800px;
+   }
+}
+

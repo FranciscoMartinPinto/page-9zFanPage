@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="build/img/9zteam_logo.png">
+    <title>9z FanPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>9z FanPage</h1>
+
+            <nav class="navegacion-principal">
+                <a href="#roster">CS Roster</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#camisetas">Camisetas</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>9z Team</h2>
+                <p>20 de abril de 2019, 9z anuncia su roster de csgo.</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/9z.mp4" type="video/mp4">
+            <source src="video/9z.ogg" type="video/ogg">
+            <source src="video/9z.webm" type="video/webm">
+        </video>
+    
+    </div>
+
+    <section class="contenedor sobre-9z">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/9zFrankkaster.avif" type="image/avif">
+                <source srcset="build/img/9zFrankkaster.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="build/img/9zFrankkaster.jpg" alt="Frankkaster CEO 9Z">
+            </picture>            
+        </div>
+        <div class="contenido-9z">
+            <h2>9z Team</h2>
+            <p class="fecha">Agosto 2018, Fundacion 9z</p>
+            <p>En agosto de 2018 el sueño de Frankkaster se hacia realidad, se fundaba la actual organizacion de Esports mas grande de Argentina "9z", Tan solo 1 año mas tarde, el 20 de Abril del 2019 9z anunciaria su primer roster de csgo, roster que quedara siempre para la historia</p>
+        </div>
+    </section>
+
+    <section class="roster" id="roster">
+        <h3 class="h3">9z Team</h3>
+
+        <p class="csgo">Roster CS:GO</p>
+        <div class="jugadores-contenedor contenedor">
+            <div class="jugador max bg-gris">
+                <p class="nombre-jugador">Maximiliano "Max" Gonzalez</p>
+
+                <ul class="informacion">
+                    <li>Rol: | <span>IGL</span></li>
+                    <li class="maxp">Edad: | <span>23 Años</span></li>
+                    <li>Nacionalidad: | <img class="flag" alt="Uruguay" src="build/img/uruguay.png"> <span>Uruguay</span></li> 
+                </ul>
+            </div> <!--.Jugador-->
+
+            <div class="jugador dgt bg-gris">
+                <p class="nombre-jugador">Franco "Dgt" Garcia</p>
+
+                <ul class="informacion">
+                    <li>Rol: | <span>Lurker</span></li>
+                    <li>Edad: | <span>21 Años</span></li>
+                    <li>Nacionalidad: | <img class="flag" alt="Uruguay" src="build/img/uruguay.png"> <span>Uruguay</span></li>
+                </ul>
+            </div> <!--.Jugador-->
+
+            <div class="jugador rox bg-gris">
+                <p class="nombre-jugador">Martin "Rox" Molina</p>
+
+                <ul class="informacion">
+                    <li>Rol: | <span>EntryFragger</span></li>
+                    <li>Edad: | <span>19 Años</span></li>
+                    <li>Nacionalidad: | <img class="flag" alt="Argentina" src="build/img/argentina.png"> <span>Argentina</span></li>
+                </ul>
+            </div> <!--.Jugador-->
+
+            <div class="jugador david bg-gris">
+                <p class="nombre-jugador">David "Dav1deuS" Tapia</p>
+
+                <ul class="informacion">
+                    <li>Rol: | <span>Rifler</span></li>
+                    <li>Edad: | <span>22 Años</span></li>
+                    <li>Nacionalidad: | <img class="flag" alt="Chile" src="build/img/chile.png"> <span>Chile</span></li>
+                </ul>
+            </div> <!--.Jugador-->
+
+            <div class="jugador nqz bg-gris">
+                <p class="nombre-jugador">Lucas "Nqz" Soares</p>
+
+                <ul class="informacion">
+                    <li>Rol: | <span>Awper</span></li>
+                    <li>Edad: | <span>17 Años</span></li>
+                    <li>Nacionalidad: | <img class="flag" alt="Brasil" src="build/img/brasil.png"> <span>Brasil</span></li>
+                </ul>
+            </div> <!--.Jugador-->
+        </div> <!--.jugadores-contenedor-->
+    </section>
+
+    <section class="galeria contenedor" id="galeria">
+        <h3>Galeria</h3>
+
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section class="abajo bg-gris">
+        <h3>Camiseta 9z</h3>
+        <p>Actualmente no se esta vendiendo</p>
+        <div class="camiseta">
+            <picture>
+                <source srcset="build/img/camiseta.avif" type="image/avif">
+                <source srcset="build/img/camiseta.webp" type="image/webp">
+                <img loading="lazy" src="build/img/camiseta.jpg" alt="Camiseta 9z">
+            </picture>     
+        </div>
+    </section>
+
+    <footer class="site-footer" id="camisetas">
+        <p>9z FanPage. | Creada por Francisco Martin Pinto</p>
+        <p>Proyecto Diseñado con HTML, CSS, JavaScript, GULP & SASS</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
+</body>
+</html>
